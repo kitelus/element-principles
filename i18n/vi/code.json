@@ -1,0 +1,42 @@
+{
+  "homepage.tagline": {
+    "message": "Locator ổn định. Ít flaky. Thiết kế UI test dễ mở rộng.",
+    "description": "Homepage tagline"
+  },
+  "homepage.readGuide": {
+    "message": "Đọc hướng dẫn",
+    "description": "Primary CTA button label"
+  },
+  "homepage.jumpChecklist": {
+    "message": "Xem checklist",
+    "description": "Secondary CTA button label"
+  },
+  "homepage.metaDescription": {
+    "message": "Sổ tay nguyên tắc UI automation ngắn gọn, thực chiến dựa trên ELEMENT.",
+    "description": "Homepage meta description"
+  },
+  "homepage.fastAdoptionTitle": {
+    "message": "Áp dụng nhanh",
+    "description": "Summary card title"
+  },
+  "homepage.fastAdoptionDesc": {
+    "message": "Bắt đầu với flow 5 bước và áp dụng ngay vào test hằng ngày.",
+    "description": "Summary card description"
+  },
+  "homepage.lowFlakinessTitle": {
+    "message": "Ít flaky",
+    "description": "Summary card title"
+  },
+  "homepage.lowFlakinessDesc": {
+    "message": "Dùng selector semantic ổn định và chiến lược wait có ý nghĩa.",
+    "description": "Summary card description"
+  },
+  "homepage.scaleReadyTitle": {
+    "message": "Sẵn sàng mở rộng",
+    "description": "Summary card title"
+  },
+  "homepage.scaleReadyDesc": {
+    "message": "Mapping tập trung và checklist review nhất quán cho toàn team.",
+    "description": "Summary card description"
+  }
+}
