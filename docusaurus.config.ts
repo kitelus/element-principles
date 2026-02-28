@@ -2,6 +2,10 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
+const organizationName = process.env.ORGANIZATION_NAME ?? "kitelus";
+const projectName = process.env.PROJECT_NAME ?? "element-principles";
+const isUserOrOrgPage = projectName === `${organizationName}.github.io`;
+
 const config: Config = {
   title: "ELEMENT UI Automation Principles",
   tagline: "Stable locators. Low flakiness. Scalable UI test design.",
@@ -11,17 +15,29 @@ const config: Config = {
     v4: true,
   },
 
-  url: "https://example.com",
-  baseUrl: "/",
+  url: process.env.URL ?? `https://${organizationName}.github.io`,
+  baseUrl: process.env.BASE_URL ?? (isUserOrOrgPage ? "/" : `/${projectName}/`),
 
-  organizationName: "your-org",
-  projectName: "element-principles",
+  organizationName,
+  projectName,
+  deploymentBranch: process.env.DEPLOYMENT_BRANCH ?? "gh-pages",
+  trailingSlash: false,
 
   onBrokenLinks: "throw",
 
   i18n: {
     defaultLocale: "en",
-    locales: ["vi", "en"],
+    locales: ["en", "vi"],
+    localeConfigs: {
+      en: {
+        label: "English",
+        htmlLang: "en-US",
+      },
+      vi: {
+        label: "Tiếng Việt",
+        htmlLang: "vi-VN",
+      },
+    },
   },
 
   presets: [
